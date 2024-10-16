@@ -50,7 +50,7 @@ else:
 
         # Add pointer annotation
         annotations.append({
-            "text": "⚪", "xref": "paper", "yref": "paper",
+            "text": "🔵", "xref": "paper", "yref": "paper",
             "showarrow": False, "font": {"size": 8, "color": "white"},
             "x": x, "y": y
         })
@@ -58,7 +58,7 @@ else:
         # Add number label annotation
         annotations.append({
             "text": str(i + 1), "xref": "paper", "yref": "paper",
-            "showarrow": False, "font": {"size": 12, "color": "white"},
+            "showarrow": False, "font": {"size": 12, "color": "#0080e6"},
             "x": label_x, "y": label_y
         })
     fig.update_layout(annotations=annotations)
