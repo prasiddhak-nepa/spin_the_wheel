@@ -66,7 +66,7 @@ else:
     # Ensure the wheel retains a larger size and remove legends
     fig.update_layout(
         showlegend=False,  # Remove legends
-        margin=dict(t=34, b=34, l=34, r=34),  # Remove margins for full view
+        margin=dict(t=36, b=36, l=36, r=36),  # Remove margins for full view
         height=700,
         width=700,
     )
