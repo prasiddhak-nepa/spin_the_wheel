@@ -16,7 +16,7 @@ apply_data = st.sidebar.button("Enter Data")
 
 # Parse the input data into a list
 data = [item.strip() for item in data_input.splitlines() if item.strip()]
-
+random.shuffle(data)
 if not data:
     st.warning("Please add data to the wheel in the sidebar.")
 else:
