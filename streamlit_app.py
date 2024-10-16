@@ -93,7 +93,7 @@ else:
             slice_angle = 360 / len(data)
 
             # Determine other winners based on equal intervals
-            winners = [data[(initial_index + i * len(data) // num_pointers) % len(data)] 
+            winners = [data[(initial_index + i * (len(data) // num_pointers)) % len(data)] 
                        for i in range(num_pointers)]
 
             # Calculate the target angle for the first winner
