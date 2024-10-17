@@ -11,7 +11,7 @@ FPS = 60  # Frames per second for smooth animation
 # Sidebar input for wheel data
 st.sidebar.header("Add Data to the Wheel")
 data_input = st.sidebar.text_area("Enter data (one per line)", height=150)
-num_pointers = st.sidebar.slider("Number of Pointers", min_value=1, max_value=100, value=3)
+num_pointers = st.sidebar.slider("Number of Pointers", min_value=1, max_value=100, value=1)
 apply_data = st.sidebar.button("Enter Data")
 
 # Parse the input data into a list
