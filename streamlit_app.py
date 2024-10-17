@@ -117,7 +117,10 @@ else:
 
         # Display the results
         st.success(f"🎊 1st Winner: **{winners[0]}**")
-        st.info(f"2nd Winner: **{winners[1]}**")
-        st.info(f"3rd Winner: **{winners[2]}**")
-        for i, winner in enumerate(winners[3:], start=4):
-            st.info(f"{i}th Winner: **{winner}**")
+
+        winner_titles = ["2nd", "3rd"]
+        for i, winner in enumerate(winners[1:], start=2):
+            if i <= 3:
+                st.info(f"{winner_titles[i-2]} Winner: **{winner}**")
+            else:
+                st.info(f"{i}th Winner: **{winner}**")
